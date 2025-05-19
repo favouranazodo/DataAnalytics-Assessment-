@@ -1,4 +1,7 @@
--- get first and last name of users from users_customuser table --
+/*-- get first and last name of users from users_customuser table and sum the values for 
+savings and investments taking into account only plans that are funded 
+and customers with just 1 investment plan and more than 1 savings plan --*/
+
 SELECT 
 	u.id owner_id, 
     concat(first_name, ' ' ,last_name) AS name, 
